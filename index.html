@@ -2,21 +2,26 @@
 <html lang="en-us">
 
   <head>
-    <meta charset="utf-8">
-    <title>New Unity Project</title>
-    <style>
-      body { margin: 0; overflow: hidden;}
-      #gameContainer { width: 100vw; height: 100vh; }
-      canvas { width: 100%; height: 100%; }
-    </style>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Cube better template.json");
-    </script>
+
   </head>
 
   <body>
-    <div id="gameContainer"></div>
+    <div id="AblePlayer">
+      <p> Able Player </p>
+      <audio id="audio1" data-able-player preload="auto">
+  <source type="audio/ogg" src="path_to_audio_file.ogg"/>
+  <source type="audio/mpeg" src="path_to_audio_file.mp3"/>
+</audio>
+    </div>
   </body>
 
 </html>
+<!-- Dependencies -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="thirdparty/js.cookie.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="build/ableplayer.min.css" type="text/css"/>
+
+<!-- JavaScript -->
+<script src="build/ableplayer.min.js"></script>
